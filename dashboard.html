@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NARS Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="dashboard.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<header class="topbar">
+
+    <div class="logo">
+
+        <div class="logo-box">
+            N
+        </div>
+
+        <span>
+            NARS
+        </span>
+
+    </div>
+
+
+    <div class="profile">
+        👤 Chintu
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN LAYOUT
+===================================================== -->
+
+<div class="layout">
+
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <div class="sidebar-title">
+        MAIN MENU
+    </div>
+
+
+    <!-- DASHBOARD -->
+
+    <button
+        class="nav-btn active"
+        onclick="window.location.href='dashboard.html'"
+    >
+
+        <span>🏠</span>
+        <span>Dashboard</span>
+
+    </button>
+
+
+    <!-- AI -->
+
+    <button
+        class="nav-btn"
+        onclick="window.location.href='ai.html'"
+    >
+
+        <span>🤖</span>
+        <span>AI Assistant</span>
+
+    </button>
+
+
+    <!-- EDUCATION -->
+
+    <button
+        class="nav-btn"
+        onclick="window.location.href='education.html'"
+    >
+
+        <span>🎓</span>
+        <span>Education</span>
+
+    </button>
+
+
+    <!-- JOBS -->
+
+    <button
+        class="nav-btn"
+        onclick="window.location.href='jobs.html'"
+    >
+
+        <span>💼</span>
+        <span>Jobs & Career</span>
+
+    </button>
+
+
+    <!-- FAMILY -->
+
+    <button
+        class="nav-btn"
+        onclick="window.location.href='family.html'"
+    >
+
+        <span>❤️</span>
+        <span>Family Care</span>
+
+    </button>
+
+
+    <!-- CHAT -->
+
+    <button
+        class="nav-btn"
+        onclick="window.location.href='chat.html'"
+    >
+
+        <span>💬</span>
+        <span>Chat & Video</span>
+
+    </button>
+
+
+    <!-- SHOPPING -->
+
+    <button
+        class="nav-btn"
+        onclick="window.location.href='shopping.html'"
+    >
+
+        <span>🛒</span>
+        <span>Shopping</span>
+
+    </button>
+
+
+
+    <!-- DISCOVER -->
+
+    <div class="sidebar-title second">
+        DISCOVER
+    </div>
+
+
+    <!-- NEWS -->
+
+    <button
+        class="nav-btn"
+        onclick="window.location.href='news.html'"
+    >
+
+        <span>📰</span>
+        <span>News</span>
+
+    </button>
+
+
+    <!-- SPORTS -->
+
+    <button
+        class="nav-btn"
+        onclick="openFeature('Sports')"
+    >
+
+        <span>🏏</span>
+        <span>Sports</span>
+
+    </button>
+
+
+    <!-- GAMES -->
+
+    <button
+        class="nav-btn"
+        onclick="window.location.href='games.html'"
+    >
+
+        <span>🎮</span>
+        <span>Games</span>
+
+    </button>
+
+
+    <!-- ENTERTAINMENT -->
+
+    <button
+        class="nav-btn"
+        onclick="openFeature('Entertainment')"
+    >
+
+        <span>🎬</span>
+        <span>Entertainment</span>
+
+    </button>
+
+
+    <!-- DOCUMENTS -->
+
+    <button
+        class="nav-btn"
+        onclick="window.location.href='documents.html'"
+    >
+
+        <span>📁</span>
+        <span>Documents</span>
+
+    </button>
+
+
+    <!-- VOICE -->
+
+    <button
+        class="nav-btn"
+        onclick="window.location.href='voice.html'"
+    >
+
+        <span>🎙️</span>
+        <span>Voice Assistant</span>
+
+    </button>
+
+
+    <!-- REMINDERS -->
+
+    <button
+        class="nav-btn"
+        onclick="openFeature('Reminders')"
+    >
+
+        <span>⏰</span>
+        <span>Reminders</span>
+
+    </button>
+
+
+
+    <!-- ACCOUNT -->
+
+    <div class="sidebar-title second">
+        ACCOUNT
+    </div>
+
+
+    <!-- NOTIFICATIONS -->
+
+    <button
+        class="nav-btn"
+        onclick="window.location.href='notifications.html'"
+    >
+
+        <span>🔔</span>
+        <span>Notifications</span>
+
+    </button>
+
+
+    <!-- SETTINGS -->
+
+    <button
+        class="nav-btn"
+        onclick="openFeature('Settings')"
+    >
+
+        <span>⚙️</span>
+        <span>Settings</span>
+
+    </button>
+
+
+</aside>
+
+
+
+<!-- =====================================================
+     CONTENT
+===================================================== -->
+
+<main class="content">
+
+
+
+<!-- =====================================================
+     WELCOME
+===================================================== -->
+
+<section class="welcome">
+
+
+    <div>
+
+        <small>
+            NARS DIGITAL HUB
+        </small>
+
+
+        <h1>
+            Welcome back, Chintu 👋
+        </h1>
+
+
+        <p>
+            Everything you need, all in one place.
+        </p>
+
+    </div>
+
+
+    <div class="nars-big">
+        N
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SEARCH
+===================================================== -->
+
+<div class="search">
+
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search NARS..."
+    >
+
+
+    <button id="searchBtn">
+        Search
+    </button>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     SECTION TITLE
+===================================================== -->
+
+<div class="section-title">
+
+    <span>
+        EXPLORE NARS
+    </span>
+
+
+    <h2>
+        What do you need?
+    </h2>
+
+</div>
+
+
+
+<!-- =====================================================
+     CARDS
+===================================================== -->
+
+<section class="cards">
+
+
+
+<!-- AI -->
+
+<div class="card">
+
+    <div class="card-icon">
+        🤖
+    </div>
+
+    <h3>
+        AI Assistant
+    </h3>
+
+    <p>
+        Chat, learn, solve doubts
+        and get help from NARS AI.
+    </p>
+
+    <button
+        onclick="window.location.href='ai.html'"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- EDUCATION -->
+
+<div class="card">
+
+    <div class="card-icon">
+        🎓
+    </div>
+
+    <h3>
+        Education
+    </h3>
+
+    <p>
+        Study materials, colleges,
+        scholarships and exams.
+    </p>
+
+    <button
+        onclick="window.location.href='education.html'"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- JOBS -->
+
+<div class="card">
+
+    <div class="card-icon">
+        💼
+    </div>
+
+    <h3>
+        Jobs & Career
+    </h3>
+
+    <p>
+        Jobs, internships and
+        career opportunities.
+    </p>
+
+    <button
+        onclick="window.location.href='jobs.html'"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- FAMILY -->
+
+<div class="card">
+
+    <div class="card-icon">
+        ❤️
+    </div>
+
+    <h3>
+        Family Care
+    </h3>
+
+    <p>
+        Family reminders, alerts,
+        calls and care tools.
+    </p>
+
+    <button
+        onclick="window.location.href='family.html'"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- CHAT -->
+
+<div class="card">
+
+    <div class="card-icon">
+        💬
+    </div>
+
+    <h3>
+        Chat & Video
+    </h3>
+
+    <p>
+        Chat and video call with
+        family and friends.
+    </p>
+
+    <button
+        onclick="window.location.href='chat.html'"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- SHOPPING -->
+
+<div class="card">
+
+    <div class="card-icon">
+        🛒
+    </div>
+
+    <h3>
+        Shopping
+    </h3>
+
+    <p>
+        Discover products and
+        useful online services.
+    </p>
+
+    <button
+        onclick="window.location.href='shopping.html'"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- NEWS -->
+
+<div class="card">
+
+    <div class="card-icon">
+        📰
+    </div>
+
+    <h3>
+        News
+    </h3>
+
+    <p>
+        Important news and updates
+        from different categories.
+    </p>
+
+    <button
+        onclick="window.location.href='news.html'"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- SPORTS -->
+
+<div class="card">
+
+    <div class="card-icon">
+        🏏
+    </div>
+
+    <h3>
+        Sports
+    </h3>
+
+    <p>
+        Cricket, sports updates,
+        scores and information.
+    </p>
+
+    <button
+        onclick="openFeature('Sports')"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- GAMES -->
+
+<div class="card">
+
+    <div class="card-icon">
+        🎮
+    </div>
+
+    <h3>
+        Games
+    </h3>
+
+    <p>
+        Play quizzes, puzzles,
+        challenges and more.
+    </p>
+
+    <button
+        onclick="window.location.href='games.html'"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- ENTERTAINMENT -->
+
+<div class="card">
+
+    <div class="card-icon">
+        🎬
+    </div>
+
+    <h3>
+        Entertainment
+    </h3>
+
+    <p>
+        Videos, content and
+        entertainment for everyone.
+    </p>
+
+    <button
+        onclick="openFeature('Entertainment')"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- DOCUMENTS -->
+
+<div class="card">
+
+    <div class="card-icon">
+        📁
+    </div>
+
+    <h3>
+        Documents
+    </h3>
+
+    <p>
+        Keep your important documents
+        organized in one place.
+    </p>
+
+    <button
+        onclick="window.location.href='documents.html'"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- VOICE -->
+
+<div class="card">
+
+    <div class="card-icon">
+        🎙️
+    </div>
+
+    <h3>
+        Voice Assistant
+    </h3>
+
+    <p>
+        Talk to NARS using
+        your voice.
+    </p>
+
+    <button
+        onclick="window.location.href='voice.html'"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- REMINDERS -->
+
+<div class="card">
+
+    <div class="card-icon">
+        ⏰
+    </div>
+
+    <h3>
+        Reminders
+    </h3>
+
+    <p>
+        Set reminders for yourself
+        and your family.
+    </p>
+
+    <button
+        onclick="openFeature('Reminders')"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- NOTIFICATIONS -->
+
+<div class="card">
+
+    <div class="card-icon">
+        🔔
+    </div>
+
+    <h3>
+        Notifications
+    </h3>
+
+    <p>
+        View important NARS
+        alerts and updates.
+    </p>
+
+    <button
+        onclick="window.location.href='notifications.html'"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+
+<!-- SETTINGS -->
+
+<div class="card">
+
+    <div class="card-icon">
+        ⚙️
+    </div>
+
+    <h3>
+        Settings
+    </h3>
+
+    <p>
+        Manage your NARS
+        preferences and account.
+    </p>
+
+    <button
+        onclick="openFeature('Settings')"
+    >
+        Open →
+    </button>
+
+</div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     LOWER PANELS
+===================================================== -->
+
+<section class="lower">
+
+
+    <!-- REMINDERS -->
+
+    <div class="panel">
+
+        <h3>
+            🔔 Today's Reminders
+        </h3>
+
+        <p>
+            No reminders yet.
+        </p>
+
+    </div>
+
+
+    <!-- QUICK TOOLS -->
+
+    <div class="panel">
+
+        <h3>
+            ⚡ Quick Tools
+        </h3>
+
+        <p>
+            📝 Notes
+            &nbsp;&nbsp;
+            ⏰ Timer
+            &nbsp;&nbsp;
+            📅 Calendar
+            &nbsp;&nbsp;
+            🧮 Calculator
+        </p>
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+// ==========================================
+// FEATURE MESSAGE
+// ==========================================
+
+function openFeature(feature) {
+
+    alert(
+        feature +
+        " is coming soon to NARS 🚀"
+    );
+
+}
+
+
+// ==========================================
+// SEARCH
+// ==========================================
+
+const searchInput =
+    document.getElementById("searchInput");
+
+const searchBtn =
+    document.getElementById("searchBtn");
+
+
+searchBtn.addEventListener(
+    "click",
+    function () {
+
+        const value =
+            searchInput.value.trim();
+
+
+        if (value === "") {
+
+            alert(
+                "What would you like to search?"
+            );
+
+            return;
+
+        }
+
+
+        alert(
+            'NARS Search: "' +
+            value +
+            '"'
+        );
+
+    }
+);
+
+
+// ==========================================
+// ENTER KEY SEARCH
+// ==========================================
+
+searchInput.addEventListener(
+    "keydown",
+    function (event) {
+
+        if (event.key === "Enter") {
+
+            searchBtn.click();
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>

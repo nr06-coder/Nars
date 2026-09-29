@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NARS Games</title>
+
+    <link
+        rel="stylesheet"
+        href="games.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="games-header">
+
+        <a
+            href="dashboard.html"
+            class="back"
+        >
+            ← Dashboard
+        </a>
+
+
+        <div class="games-brand">
+
+            <div class="games-logo">
+                🎮
+            </div>
+
+            <div>
+
+                <strong>
+                    NARS Games
+                </strong>
+
+                <small>
+                    Play. Learn. Challenge yourself.
+                </small>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main class="games-container">
+
+
+        <!-- HERO -->
+
+        <section class="games-hero">
+
+            <div>
+
+                <span>
+                    NARS PLAY ZONE
+                </span>
+
+                <h1>
+                    Play. Challenge. Win. 🎮
+                </h1>
+
+                <p>
+                    Enjoy simple games, brain challenges
+                    and educational games inside NARS.
+                </p>
+
+            </div>
+
+
+            <div class="games-big-icon">
+                🎮
+            </div>
+
+        </section>
+
+
+
+        <!-- GAME CATEGORIES -->
+
+        <section class="games-section">
+
+            <div class="section-heading">
+
+                <span>
+                    GAME ZONE
+                </span>
+
+                <h2>
+                    Choose a game
+                </h2>
+
+            </div>
+
+
+            <div class="games-grid">
+
+
+                <!-- QUIZ -->
+
+                <div class="game-card">
+
+                    <div class="game-icon">
+                        🧠
+                    </div>
+
+                    <h3>
+                        Quick Quiz
+                    </h3>
+
+                    <p>
+                        Test your knowledge with
+                        quick questions.
+                    </p>
+
+                    <button
+                        onclick="startGame('Quiz')"
+                    >
+                        Play →
+                    </button>
+
+                </div>
+
+
+
+                <!-- MEMORY -->
+
+                <div class="game-card">
+
+                    <div class="game-icon">
+                        🃏
+                    </div>
+
+                    <h3>
+                        Memory Game
+                    </h3>
+
+                    <p>
+                        Improve your memory by
+                        matching cards.
+                    </p>
+
+                    <button
+                        onclick="startGame('Memory Game')"
+                    >
+                        Play →
+                    </button>
+
+                </div>
+
+
+
+                <!-- MATH -->
+
+                <div class="game-card">
+
+                    <div class="game-icon">
+                        ➗
+                    </div>
+
+                    <h3>
+                        Math Challenge
+                    </h3>
+
+                    <p>
+                        Solve mathematical problems
+                        against the clock.
+                    </p>
+
+                    <button
+                        onclick="startGame('Math Challenge')"
+                    >
+                        Play →
+                    </button>
+
+                </div>
+
+
+
+                <!-- WORD -->
+
+                <div class="game-card">
+
+                    <div class="game-icon">
+                        🔤
+                    </div>
+
+                    <h3>
+                        Word Challenge
+                    </h3>
+
+                    <p>
+                        Improve vocabulary with
+                        word-based challenges.
+                    </p>
+
+                    <button
+                        onclick="startGame('Word Challenge')"
+                    >
+                        Play →
+                    </button>
+
+                </div>
+
+
+
+                <!-- PUZZLE -->
+
+                <div class="game-card">
+
+                    <div class="game-icon">
+                        🧩
+                    </div>
+
+                    <h3>
+                        Puzzle Zone
+                    </h3>
+
+                    <p>
+                        Solve puzzles and improve
+                        your logical thinking.
+                    </p>
+
+                    <button
+                        onclick="startGame('Puzzle Zone')"
+                    >
+                        Play →
+                    </button>
+
+                </div>
+
+
+
+                <!-- CRICKET -->
+
+                <div class="game-card">
+
+                    <div class="game-icon">
+                        🏏
+                    </div>
+
+                    <h3>
+                        Cricket Challenge
+                    </h3>
+
+                    <p>
+                        Test your cricket knowledge
+                        and skills.
+                    </p>
+
+                    <button
+                        onclick="startGame('Cricket Challenge')"
+                    >
+                        Play →
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SCORE -->
+
+        <section class="games-score">
+
+            <div class="score-icon">
+                🏆
+            </div>
+
+
+            <div>
+
+                <span>
+                    YOUR PROGRESS
+                </span>
+
+                <h2>
+                    Keep challenging yourself.
+                </h2>
+
+                <p>
+                    Your scores, achievements and
+                    game history can be stored here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="games.js"></script>
+
+
+</body>
+
+</html>

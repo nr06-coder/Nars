@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NARS Entertainment</title>
+
+    <link
+        rel="stylesheet"
+        href="entertainment.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="ent-header">
+
+        <a
+            href="dashboard.html"
+            class="back"
+        >
+            ← Dashboard
+        </a>
+
+
+        <div class="ent-brand">
+
+            <div class="ent-logo">
+                🎬
+            </div>
+
+            <div>
+
+                <strong>
+                    NARS Entertainment
+                </strong>
+
+                <small>
+                    Watch. Listen. Enjoy.
+                </small>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main class="ent-container">
+
+
+        <!-- HERO -->
+
+        <section class="ent-hero">
+
+            <div>
+
+                <span>
+                    NARS ENTERTAINMENT HUB
+                </span>
+
+                <h1>
+                    Your Entertainment Zone 🎬
+                </h1>
+
+                <p>
+                    Discover movies, music, videos,
+                    games and fun content in one place.
+                </p>
+
+            </div>
+
+
+            <div class="ent-big-icon">
+                🎬
+            </div>
+
+        </section>
+
+
+
+        <!-- SEARCH -->
+
+        <div class="ent-search">
+
+            <input
+                type="text"
+                id="entSearch"
+                placeholder="Search entertainment..."
+            >
+
+            <button id="entSearchBtn">
+                Search
+            </button>
+
+        </div>
+
+
+
+        <!-- CATEGORIES -->
+
+        <section class="ent-section">
+
+            <div class="section-heading">
+
+                <span>
+                    EXPLORE
+                </span>
+
+                <h2>
+                    What do you want to enjoy?
+                </h2>
+
+            </div>
+
+
+            <div class="ent-grid">
+
+
+                <!-- VIDEOS -->
+
+                <div class="ent-card">
+
+                    <div class="ent-icon">
+                        ▶️
+                    </div>
+
+                    <span>
+                        VIDEOS
+                    </span>
+
+                    <h3>
+                        Videos
+                    </h3>
+
+                    <p>
+                        Watch interesting,
+                        educational and fun videos.
+                    </p>
+
+                    <button
+                        onclick="openEntertainment('Videos')"
+                    >
+                        Explore →
+                    </button>
+
+                </div>
+
+
+
+                <!-- MUSIC -->
+
+                <div class="ent-card">
+
+                    <div class="ent-icon">
+                        🎵
+                    </div>
+
+                    <span>
+                        MUSIC
+                    </span>
+
+                    <h3>
+                        Music
+                    </h3>
+
+                    <p>
+                        Discover songs, playlists
+                        and music content.
+                    </p>
+
+                    <button
+                        onclick="openEntertainment('Music')"
+                    >
+                        Explore →
+                    </button>
+
+                </div>
+
+
+
+                <!-- MOVIES -->
+
+                <div class="ent-card">
+
+                    <div class="ent-icon">
+                        🎥
+                    </div>
+
+                    <span>
+                        MOVIES
+                    </span>
+
+                    <h3>
+                        Movies
+                    </h3>
+
+                    <p>
+                        Explore movies, trailers
+                        and entertainment updates.
+                    </p>
+
+                    <button
+                        onclick="openEntertainment('Movies')"
+                    >
+                        Explore →
+                    </button>
+
+                </div>
+
+
+
+                <!-- SHORTS -->
+
+                <div class="ent-card">
+
+                    <div class="ent-icon">
+                        📱
+                    </div>
+
+                    <span>
+                        SHORTS
+                    </span>
+
+                    <h3>
+                        Short Videos
+                    </h3>
+
+                    <p>
+                        Quick and entertaining
+                        short-form content.
+                    </p>
+
+                    <button
+                        onclick="openEntertainment('Short Videos')"
+                    >
+                        Explore →
+                    </button>
+
+                </div>
+
+
+
+                <!-- PODCASTS -->
+
+                <div class="ent-card">
+
+                    <div class="ent-icon">
+                        🎙️
+                    </div>
+
+                    <span>
+                        PODCASTS
+                    </span>
+
+                    <h3>
+                        Podcasts
+                    </h3>
+
+                    <p>
+                        Listen to stories,
+                        discussions and useful podcasts.
+                    </p>
+
+                    <button
+                        onclick="openEntertainment('Podcasts')"
+                    >
+                        Explore →
+                    </button>
+
+                </div>
+
+
+
+                <!-- FUN -->
+
+                <div class="ent-card">
+
+                    <div class="ent-icon">
+                        🎮
+                    </div>
+
+                    <span>
+                        FUN ZONE
+                    </span>
+
+                    <h3>
+                        Fun Zone
+                    </h3>
+
+                    <p>
+                        Games, quizzes and
+                        fun activities.
+                    </p>
+
+                    <button
+                        onclick="openEntertainment('Fun Zone')"
+                    >
+                        Explore →
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FEATURED -->
+
+        <section class="featured">
+
+            <div class="featured-icon">
+                ⭐
+            </div>
+
+            <div>
+
+                <span>
+                    FEATURED
+                </span>
+
+                <h2>
+                    Entertainment coming to NARS
+                </h2>
+
+                <p>
+                    Real content, recommendations
+                    and personalised entertainment
+                    can be connected here later.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="entertainment.js"></script>
+
+</body>
+
+</html>

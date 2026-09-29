@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NARS Study Hub</title>
+
+    <link
+        rel="stylesheet"
+        href="study.css"
+    >
+
+</head>
+
+<body>
+
+
+    <header class="study-header">
+
+        <a
+            href="dashboard.html"
+            class="back"
+        >
+            ← Dashboard
+        </a>
+
+
+        <div class="study-brand">
+
+            <div class="study-logo">
+                📚
+            </div>
+
+            <div>
+
+                <strong>
+                    NARS Study Hub
+                </strong>
+
+                <small>
+                    Learn smarter. Grow faster.
+                </small>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <main class="study-container">
+
+
+        <!-- HERO -->
+
+        <section class="study-hero">
+
+            <div>
+
+                <span>
+                    NARS EDUCATION
+                </span>
+
+                <h1>
+                    Your Study Hub 📚
+                </h1>
+
+                <p>
+                    Study materials, notes, exams,
+                    colleges, scholarships and
+                    learning resources in one place.
+                </p>
+
+            </div>
+
+
+            <div class="study-big-icon">
+                📚
+            </div>
+
+        </section>
+
+
+
+        <!-- SEARCH -->
+
+        <div class="study-search">
+
+            <input
+                type="text"
+                id="studySearch"
+                placeholder="Search subjects, exams, notes..."
+            >
+
+            <button id="studySearchBtn">
+                Search
+            </button>
+
+        </div>
+
+
+
+        <!-- CATEGORIES -->
+
+        <section class="study-section">
+
+            <div class="section-heading">
+
+                <span>
+                    STUDY CATEGORIES
+                </span>
+
+                <h2>
+                    What do you want to learn?
+                </h2>
+
+            </div>
+
+
+            <div class="study-grid">
+
+
+                <div class="study-card">
+
+                    <div class="study-icon">
+                        📖
+                    </div>
+
+                    <h3>
+                        Study Materials
+                    </h3>
+
+                    <p>
+                        Notes, PDFs and learning
+                        resources for students.
+                    </p>
+
+                    <button
+                        onclick="openStudy('Study Materials')"
+                    >
+                        Open →
+                    </button>
+
+                </div>
+
+
+
+                <div class="study-card">
+
+                    <div class="study-icon">
+                        🧮
+                    </div>
+
+                    <h3>
+                        Subjects
+                    </h3>
+
+                    <p>
+                        Maths, Physics, Chemistry,
+                        Coding and more.
+                    </p>
+
+                    <button
+                        onclick="openStudy('Subjects')"
+                    >
+                        Open →
+                    </button>
+
+                </div>
+
+
+
+                <div class="study-card">
+
+                    <div class="study-icon">
+                        📝
+                    </div>
+
+                    <h3>
+                        Exams
+                    </h3>
+
+                    <p>
+                        Entrance exams, preparation
+                        and important updates.
+                    </p>
+
+                    <button
+                        onclick="openStudy('Exams')"
+                    >
+                        Open →
+                    </button>
+
+                </div>
+
+
+
+                <div class="study-card">
+
+                    <div class="study-icon">
+                        🏫
+                    </div>
+
+                    <h3>
+                        Colleges
+                    </h3>
+
+                    <p>
+                        Explore colleges, branches,
+                        courses and rankings.
+                    </p>
+
+                    <button
+                        onclick="openStudy('Colleges')"
+                    >
+                        Open →
+                    </button>
+
+                </div>
+
+
+
+                <div class="study-card">
+
+                    <div class="study-icon">
+                        🎓
+                    </div>
+
+                    <h3>
+                        Scholarships
+                    </h3>
+
+                    <p>
+                        Find scholarships and
+                        student financial support.
+                    </p>
+
+                    <button
+                        onclick="openStudy('Scholarships')"
+                    >
+                        Open →
+                    </button>
+
+                </div>
+
+
+
+                <div class="study-card">
+
+                    <div class="study-icon">
+                        💻
+                    </div>
+
+                    <h3>
+                        Coding
+                    </h3>
+
+                    <p>
+                        Learn programming, web
+                        development and technology.
+                    </p>
+
+                    <button
+                        onclick="openStudy('Coding')"
+                    >
+                        Open →
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- STUDENT TOOLS -->
+
+        <section class="student-tools">
+
+            <div>
+
+                <span>
+                    STUDENT TOOLS
+                </span>
+
+                <h2>
+                    Everything for your studies.
+                </h2>
+
+                <p>
+                    NARS can bring your notes,
+                    doubts, study plans and
+                    learning tools together.
+                </p>
+
+            </div>
+
+
+            <div class="tools-icons">
+
+                📚 &nbsp;
+                🧠 &nbsp;
+                📝 &nbsp;
+                💻
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="study.js"></script>
+
+</body>
+
+</html>

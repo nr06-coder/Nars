@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f7fb;
+    color: #171717;
+}
+
+
+/* HEADER */
+
+.games-header {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.back {
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+}
+
+.games-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.games-logo {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #ede9fe;
+
+    font-size: 21px;
+}
+
+.games-brand strong {
+    display: block;
+    font-size: 14px;
+}
+
+.games-brand small {
+    display: block;
+    margin-top: 3px;
+    color: #888;
+    font-size: 10px;
+}
+
+
+/* MAIN */
+
+.games-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 30px 20px;
+}
+
+
+/* HERO */
+
+.games-hero {
+    min-height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 38px;
+
+    margin-bottom: 30px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(120deg,
+            #f3e8ff,
+            #faf5ff);
+}
+
+.games-hero span,
+.section-heading span,
+.games-score span {
+    color: #7c3aed;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.2px;
+}
+
+.games-hero h1 {
+    margin-top: 9px;
+
+    font-size: 34px;
+}
+
+.games-hero p {
+    max-width: 570px;
+
+    margin-top: 10px;
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.games-big-icon {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 25px;
+
+    background: white;
+
+    font-size: 45px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+
+/* SECTION */
+
+.section-heading {
+    margin-bottom: 16px;
+}
+
+.section-heading h2 {
+    margin-top: 5px;
+
+    font-size: 21px;
+}
+
+
+/* GAME GRID */
+
+.games-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.game-card {
+    padding: 22px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 15px;
+
+    transition: 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.game-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 14px;
+
+    border-radius: 12px;
+
+    background: #f3e8ff;
+
+    font-size: 22px;
+}
+
+.game-card h3 {
+    margin-bottom: 7px;
+
+    font-size: 15px;
+}
+
+.game-card p {
+    min-height: 45px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+.game-card button {
+    margin-top: 13px;
+
+    padding: 9px 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #7c3aed;
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.game-card button:hover {
+    opacity: 0.9;
+}
+
+
+/* SCORE */
+
+.games-score {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    background: #111827;
+
+    color: white;
+}
+
+.score-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 17px;
+
+    background: white;
+
+    font-size: 28px;
+}
+
+.games-score h2 {
+    margin-top: 6px;
+
+    font-size: 19px;
+}
+
+.games-score p {
+    margin-top: 7px;
+
+    color: #aeb5c1;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* TABLET */
+
+@media (max-width: 800px) {
+
+    .games-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+
+    .games-header {
+        padding: 0 15px;
+    }
+
+    .games-container {
+        padding: 20px 15px;
+    }
+
+    .games-hero {
+        padding: 25px;
+    }
+
+    .games-hero h1 {
+        font-size: 27px;
+    }
+
+    .games-big-icon {
+        display: none;
+    }
+
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .games-score {
+        align-items: flex-start;
+    }
+
+}

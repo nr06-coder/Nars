@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NARS News</title>
+
+    <link
+        rel="stylesheet"
+        href="news.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="news-header">
+
+        <a
+            href="dashboard.html"
+            class="back"
+        >
+            ← Dashboard
+        </a>
+
+
+        <div class="news-brand">
+
+            <div class="news-logo">
+                📰
+            </div>
+
+            <div>
+
+                <strong>
+                    NARS News
+                </strong>
+
+                <small>
+                    Stay informed. Stay updated.
+                </small>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main class="news-container">
+
+
+        <!-- HERO -->
+
+        <section class="news-hero">
+
+            <div>
+
+                <span>
+                    NEWS HUB
+                </span>
+
+                <h1>
+                    What's happening today? 📰
+                </h1>
+
+                <p>
+                    Discover important updates from
+                    education, technology, sports,
+                    business and the world.
+                </p>
+
+            </div>
+
+
+            <div class="news-big-icon">
+                📰
+            </div>
+
+        </section>
+
+
+
+        <!-- SEARCH -->
+
+        <div class="news-search">
+
+            <input
+                type="text"
+                id="newsSearch"
+                placeholder="Search news..."
+            >
+
+            <button id="newsSearchBtn">
+                Search
+            </button>
+
+        </div>
+
+
+
+        <!-- CATEGORIES -->
+
+        <section class="news-section">
+
+            <div class="section-heading">
+
+                <span>
+                    CATEGORIES
+                </span>
+
+                <h2>
+                    Explore news
+                </h2>
+
+            </div>
+
+
+            <div class="category-tabs">
+
+                <button
+                    class="category-btn active"
+                    onclick="selectCategory('All')"
+                >
+                    All
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="selectCategory('Education')"
+                >
+                    Education
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="selectCategory('Technology')"
+                >
+                    Technology
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="selectCategory('Sports')"
+                >
+                    Sports
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="selectCategory('Business')"
+                >
+                    Business
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="selectCategory('World')"
+                >
+                    World
+                </button>
+
+            </div>
+
+
+            <!-- NEWS CARDS -->
+
+            <div
+                class="news-grid"
+                id="newsGrid"
+            >
+
+
+                <article
+                    class="news-card"
+                    data-category="Education"
+                >
+
+                    <div class="news-card-icon">
+                        🎓
+                    </div>
+
+                    <span>
+                        EDUCATION
+                    </span>
+
+                    <h3>
+                        Education Updates
+                    </h3>
+
+                    <p>
+                        Latest education news,
+                        exams, colleges and
+                        student opportunities.
+                    </p>
+
+                    <button
+                        onclick="openNews('Education')"
+                    >
+                        Read More →
+                    </button>
+
+                </article>
+
+
+
+                <article
+                    class="news-card"
+                    data-category="Technology"
+                >
+
+                    <div class="news-card-icon">
+                        🤖
+                    </div>
+
+                    <span>
+                        TECHNOLOGY
+                    </span>
+
+                    <h3>
+                        Technology Updates
+                    </h3>
+
+                    <p>
+                        AI, software, gadgets and
+                        technology developments.
+                    </p>
+
+                    <button
+                        onclick="openNews('Technology')"
+                    >
+                        Read More →
+                    </button>
+
+                </article>
+
+
+
+                <article
+                    class="news-card"
+                    data-category="Sports"
+                >
+
+                    <div class="news-card-icon">
+                        🏏
+                    </div>
+
+                    <span>
+                        SPORTS
+                    </span>
+
+                    <h3>
+                        Sports Updates
+                    </h3>
+
+                    <p>
+                        Cricket, football and
+                        major sports updates.
+                    </p>
+
+                    <button
+                        onclick="openNews('Sports')"
+                    >
+                        Read More →
+                    </button>
+
+                </article>
+
+
+
+                <article
+                    class="news-card"
+                    data-category="Business"
+                >
+
+                    <div class="news-card-icon">
+                        📈
+                    </div>
+
+                    <span>
+                        BUSINESS
+                    </span>
+
+                    <h3>
+                        Business Updates
+                    </h3>
+
+                    <p>
+                        Markets, startups and
+                        business developments.
+                    </p>
+
+                    <button
+                        onclick="openNews('Business')"
+                    >
+                        Read More →
+                    </button>
+
+                </article>
+
+
+
+                <article
+                    class="news-card"
+                    data-category="World"
+                >
+
+                    <div class="news-card-icon">
+                        🌍
+                    </div>
+
+                    <span>
+                        WORLD
+                    </span>
+
+                    <h3>
+                        World News
+                    </h3>
+
+                    <p>
+                        Important developments
+                        from around the world.
+                    </p>
+
+                    <button
+                        onclick="openNews('World')"
+                    >
+                        Read More →
+                    </button>
+
+                </article>
+
+
+
+                <article
+                    class="news-card"
+                    data-category="Technology"
+                >
+
+                    <div class="news-card-icon">
+                        💻
+                    </div>
+
+                    <span>
+                        DIGITAL
+                    </span>
+
+                    <h3>
+                        Digital World
+                    </h3>
+
+                    <p>
+                        Internet, apps, cybersecurity
+                        and digital trends.
+                    </p>
+
+                    <button
+                        onclick="openNews('Digital')"
+                    >
+                        Read More →
+                    </button>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- IMPORTANT NEWS -->
+
+        <section class="important-news">
+
+            <div class="important-icon">
+                🔔
+            </div>
+
+
+            <div>
+
+                <span>
+                    NARS IMPORTANT
+                </span>
+
+                <h2>
+                    Don't miss important updates.
+                </h2>
+
+                <p>
+                    In the future, NARS can bring
+                    verified news from trusted sources
+                    directly into this section.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="news.js"></script>
+
+</body>
+
+</html>

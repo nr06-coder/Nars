@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NARS Voice Assistant</title>
+
+    <link rel="stylesheet" href="voice.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+
+        <a href="dashboard.html" class="back-btn">
+            ←
+        </a>
+
+        <div class="brand">
+
+            <div class="logo">
+                N
+            </div>
+
+            <div>
+                <strong>NARS</strong>
+                <small>Voice Assistant</small>
+            </div>
+
+        </div>
+
+        <div class="profile">
+            👤 Chintu
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- WELCOME -->
+        <section class="welcome">
+
+            <span>NARS VOICE ASSISTANT</span>
+
+            <h1>
+                Talk to NARS 🎙️
+            </h1>
+
+            <p>
+                Speak naturally and let NARS understand
+                your commands.
+            </p>
+
+        </section>
+
+
+        <!-- VOICE CARD -->
+        <section class="voice-card">
+
+            <div class="mic-circle" id="micCircle">
+                🎙️
+            </div>
+
+            <h2 id="voiceStatus">
+                Ready to listen
+            </h2>
+
+            <p id="voiceText">
+                Tap the microphone and speak.
+            </p>
+
+            <button
+                id="micButton"
+                class="primary-btn"
+            >
+                🎙️ Start Listening
+            </button>
+
+            <button
+                id="stopButton"
+                class="stop-btn"
+            >
+                ⏹ Stop Listening
+            </button>
+
+        </section>
+
+
+        <!-- YOU SAID -->
+        <section class="panel">
+
+            <div class="panel-heading">
+                🗣️ YOU SAID
+            </div>
+
+            <div
+                id="userSpeech"
+                class="panel-content"
+            >
+                Your voice message will appear here.
+            </div>
+
+        </section>
+
+
+        <!-- NARS RESPONSE -->
+        <section class="panel">
+
+            <div class="response-heading">
+
+                <span>
+                    🤖 NARS RESPONSE
+                </span>
+
+                <button
+                    id="speakButton"
+                    class="speak-btn"
+                >
+                    🔊 Speak
+                </button>
+
+            </div>
+
+            <div
+                id="narsResponse"
+                class="panel-content"
+            >
+                Hello Chintu 👋
+                <br><br>
+                I'm ready to listen.
+            </div>
+
+        </section>
+
+
+        <!-- EXAMPLES -->
+        <section class="examples">
+
+            <div class="section-label">
+                TRY ASKING
+            </div>
+
+            <h2>
+                Example Commands
+            </h2>
+
+
+            <div class="example-grid">
+
+                <button onclick="useCommand('Hello NARS')">
+                    👋
+                    <span>Hello NARS</span>
+                </button>
+
+                <button onclick="useCommand('Open my documents')">
+                    📁
+                    <span>Open my documents</span>
+                </button>
+
+                <button onclick="useCommand('Open education')">
+                    🎓
+                    <span>Open education</span>
+                </button>
+
+                <button onclick="useCommand('Open news')">
+                    📰
+                    <span>Open news</span>
+                </button>
+
+                <button onclick="useCommand('Open games')">
+                    🎮
+                    <span>Open games</span>
+                </button>
+
+                <button onclick="useCommand('What time is it?')">
+                    🕐
+                    <span>What time is it?</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- NOTICE -->
+        <div class="notice">
+
+            🔐
+
+            <span>
+                NARS Voice Assistant currently works
+                through your browser microphone.
+            </span>
+
+        </div>
+
+    </main>
+
+
+    <script src="voice.js"></script>
+
+</body>
+
+</html>

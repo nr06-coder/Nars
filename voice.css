@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f5f6f8;
+
+    color: #171717;
+}
+
+
+/* ================= TOP BAR ================= */
+
+.topbar {
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 28px;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.back-btn {
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 16px;
+
+    border-radius: 10px;
+
+    background: #f1f2f4;
+
+    color: #222;
+
+    text-decoration: none;
+
+    font-size: 22px;
+}
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.logo {
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #111827;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 18px;
+}
+
+
+.brand strong {
+
+    display: block;
+
+    font-size: 14px;
+}
+
+
+.brand small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: #777;
+
+    font-size: 10px;
+}
+
+
+.profile {
+
+    margin-left: auto;
+
+    font-size: 12px;
+}
+
+
+/* ================= MAIN ================= */
+
+.container {
+
+    width: min(850px, 92%);
+
+    margin: auto;
+
+    padding: 35px 0 60px;
+}
+
+
+/* ================= WELCOME ================= */
+
+.welcome {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+.welcome span,
+.section-label {
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    color: #888;
+}
+
+
+.welcome h1 {
+
+    margin-top: 10px;
+
+    font-size: 34px;
+}
+
+
+.welcome p {
+
+    margin-top: 10px;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* ================= VOICE CARD ================= */
+
+.voice-card {
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    background: #111827;
+
+    color: white;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, .12);
+}
+
+
+.mic-circle {
+
+    width: 125px;
+    height: 125px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #111827;
+
+    font-size: 48px;
+
+    transition: .25s;
+}
+
+
+.mic-circle.listening {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 0 12px rgba(255, 255, 255, .08),
+        0 0 0 24px rgba(255, 255, 255, .04);
+}
+
+
+.voice-card h2 {
+
+    margin-top: 22px;
+
+    font-size: 19px;
+}
+
+
+.voice-card p {
+
+    margin-top: 7px;
+
+    color: #b7bec8;
+
+    font-size: 11px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.primary-btn,
+.stop-btn {
+
+    margin-top: 22px;
+
+    padding: 13px 22px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.primary-btn {
+
+    background: white;
+
+    color: #111827;
+}
+
+
+.stop-btn {
+
+    display: none;
+
+    background: #374151;
+
+    color: white;
+}
+
+
+/* ================= PANELS ================= */
+
+.panel {
+
+    margin-top: 18px;
+
+    padding: 20px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 17px;
+}
+
+
+.panel-heading {
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    color: #777;
+}
+
+
+.response-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    color: #777;
+}
+
+
+.speak-btn {
+
+    padding: 7px 10px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #f1f2f4;
+
+    color: #555;
+
+    font-size: 9px;
+
+    cursor: pointer;
+}
+
+
+.panel-content {
+
+    min-height: 60px;
+
+    margin-top: 13px;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    background: #f7f7f8;
+
+    color: #555;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= EXAMPLES ================= */
+
+.examples {
+
+    margin-top: 35px;
+}
+
+
+.examples h2 {
+
+    margin-top: 7px;
+
+    font-size: 20px;
+}
+
+
+.example-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+
+.example-grid button {
+
+    min-height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    background: white;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: .2s;
+}
+
+
+.example-grid button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, .05);
+}
+
+
+.example-grid span {
+
+    color: #555;
+
+    font-size: 10px;
+}
+
+
+/* ================= NOTICE ================= */
+
+.notice {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+    padding: 14px 17px;
+
+    border-radius: 12px;
+
+    background: #eceef1;
+
+    color: #777;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .topbar {
+
+        padding: 0 15px;
+    }
+
+
+    .profile {
+
+        font-size: 0;
+    }
+
+
+    .profile::after {
+
+        content: "👤";
+
+        font-size: 17px;
+    }
+
+
+    .container {
+
+        width: 94%;
+    }
+
+
+    .welcome h1 {
+
+        font-size: 28px;
+    }
+
+
+    .voice-card {
+
+        padding: 35px 15px;
+    }
+
+
+    .mic-circle {
+
+        width: 105px;
+        height: 105px;
+
+        font-size: 40px;
+    }
+
+
+    .example-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}

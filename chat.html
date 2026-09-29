@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NARS Chat & Video</title>
+
+    <link
+        rel="stylesheet"
+        href="chat.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="chat-header">
+
+        <a
+            href="dashboard.html"
+            class="back"
+        >
+            ← Dashboard
+        </a>
+
+
+        <div class="chat-brand">
+
+            <div class="chat-logo">
+                💬
+            </div>
+
+            <div>
+
+                <strong>
+                    NARS Chat & Video
+                </strong>
+
+                <small>
+                    Connect with the people who matter.
+                </small>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main class="chat-container">
+
+
+        <!-- WELCOME -->
+
+        <section class="chat-welcome">
+
+            <div>
+
+                <span>
+                    COMMUNICATION HUB
+                </span>
+
+                <h1>
+                    Stay connected. 💬
+                </h1>
+
+                <p>
+                    Chat with your family and friends,
+                    and connect through video calls.
+                </p>
+
+            </div>
+
+
+            <div class="chat-big-icon">
+                💬
+            </div>
+
+        </section>
+
+
+
+        <!-- CONTACTS -->
+
+        <section class="chat-panel">
+
+            <div class="panel-heading">
+
+                <span>
+                    CONTACTS
+                </span>
+
+                <h2>
+                    Your people
+                </h2>
+
+            </div>
+
+
+            <div class="contact-form">
+
+                <input
+                    type="text"
+                    id="contactName"
+                    placeholder="Name"
+                >
+
+
+                <input
+                    type="tel"
+                    id="contactPhone"
+                    placeholder="Phone number"
+                >
+
+
+                <button id="addContactBtn">
+                    + Add Contact
+                </button>
+
+            </div>
+
+
+            <div id="contactsList">
+
+                <div class="empty-chat">
+
+                    <div>
+                        👥
+                    </div>
+
+                    <p>
+                        No contacts added yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- QUICK COMMUNICATION -->
+
+        <section class="chat-panel">
+
+            <div class="panel-heading">
+
+                <span>
+                    QUICK CONNECT
+                </span>
+
+                <h2>
+                    Start a conversation
+                </h2>
+
+            </div>
+
+
+            <div class="connect-grid">
+
+
+                <!-- CHAT -->
+
+                <div class="connect-card">
+
+                    <div class="connect-icon">
+                        💬
+                    </div>
+
+                    <h3>
+                        Chat
+                    </h3>
+
+                    <p>
+                        Send messages to your
+                        contacts.
+                    </p>
+
+                    <button
+                        onclick="openChatFeature('Chat')"
+                    >
+                        Start Chat →
+                    </button>
+
+                </div>
+
+
+
+                <!-- VIDEO -->
+
+                <div class="connect-card">
+
+                    <div class="connect-icon">
+                        🎥
+                    </div>
+
+                    <h3>
+                        Video Call
+                    </h3>
+
+                    <p>
+                        Connect face-to-face
+                        with your family.
+                    </p>
+
+                    <button
+                        onclick="openChatFeature('Video Call')"
+                    >
+                        Start Video →
+                    </button>
+
+                </div>
+
+
+
+                <!-- VOICE -->
+
+                <div class="connect-card">
+
+                    <div class="connect-icon">
+                        📞
+                    </div>
+
+                    <h3>
+                        Voice Call
+                    </h3>
+
+                    <p>
+                        Make a voice call to
+                        a saved contact.
+                    </p>
+
+                    <button
+                        onclick="openChatFeature('Voice Call')"
+                    >
+                        Start Call →
+                    </button>
+
+                </div>
+
+
+
+                <!-- GROUP -->
+
+                <div class="connect-card">
+
+                    <div class="connect-icon">
+                        👨‍👩‍👧‍👦
+                    </div>
+
+                    <h3>
+                        Family Group
+                    </h3>
+
+                    <p>
+                        Keep your family
+                        connected together.
+                    </p>
+
+                    <button
+                        onclick="openChatFeature('Family Group')"
+                    >
+                        Open Group →
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SAFETY -->
+
+        <section class="chat-safety">
+
+            <div class="safety-icon">
+                🛡️
+            </div>
+
+
+            <div>
+
+                <span>
+                    NARS SAFETY
+                </span>
+
+                <h2>
+                    Your privacy matters.
+                </h2>
+
+                <p>
+                    Never share passwords, OTPs or
+                    sensitive information with people
+                    you don't trust.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="chat.js"></script>
+
+
+</body>
+
+</html>

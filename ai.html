@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NARS AI Assistant</title>
+
+    <link rel="stylesheet" href="ai.css">
+</head>
+
+<body>
+
+    <header class="ai-header">
+
+        <a href="dashboard.html" class="back">
+            ← Dashboard
+        </a>
+
+        <div class="ai-brand">
+            <div class="ai-logo">N</div>
+
+            <div>
+                <strong>NARS AI</strong>
+                <small>Your personal AI assistant</small>
+            </div>
+        </div>
+
+        <button id="clearBtn" class="clear-btn">
+            Clear
+        </button>
+
+    </header>
+
+
+    <main class="ai-container">
+
+        <section class="welcome-ai">
+
+            <div class="big-ai-logo">
+                N
+            </div>
+
+            <h1>
+                How can I help you?
+            </h1>
+
+            <p>
+                Ask NARS anything, or choose an option below.
+            </p>
+
+        </section>
+
+
+        <!-- QUICK ACTIONS -->
+
+        <div class="quick-actions">
+
+            <button data-prompt="Help me study">
+                🎓
+                <span>Help me study</span>
+            </button>
+
+            <button data-prompt="Create an image">
+                🖼️
+                <span>Create an image</span>
+            </button>
+
+            <button data-prompt="Help me find a job">
+                💼
+                <span>Career help</span>
+            </button>
+
+            <button data-prompt="Talk to me">
+                💬
+                <span>Talk with me</span>
+            </button>
+
+        </div>
+
+
+        <!-- CHAT -->
+
+        <section id="chatArea" class="chat-area">
+
+            <div class="message ai-message">
+
+                <div class="message-icon">
+                    N
+                </div>
+
+                <div class="message-content">
+
+                    <strong>NARS AI</strong>
+
+                    <p>
+                        Hi! I'm NARS AI. Tell me what
+                        you need help with.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INPUT -->
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="aiInput"
+                placeholder="Message NARS AI..."
+                autocomplete="off"
+            >
+
+            <button id="voiceBtn">
+                🎙️
+            </button>
+
+            <button id="sendBtn">
+                ↑
+            </button>
+
+        </div>
+
+
+        <p class="disclaimer">
+            NARS AI can make mistakes. Verify important information.
+        </p>
+
+    </main>
+
+
+    <script src="ai.js"></script>
+
+</body>
+
+</html>

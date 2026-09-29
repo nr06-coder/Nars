@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NARS Documents</title>
+
+    <link
+        rel="stylesheet"
+        href="documents.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- ================= TOP BAR ================= -->
+
+    <header class="topbar">
+
+        <a
+            href="dashboard.html"
+            class="back-btn"
+        >
+            ←
+        </a>
+
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                📁
+            </div>
+
+            <div>
+
+                <strong>NARS</strong>
+
+                <small>
+                    Documents
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="user">
+
+            👤
+
+            <span>
+                Chintu
+            </span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+
+        <!-- ================= WELCOME ================= -->
+
+        <section class="welcome">
+
+            <div>
+
+                <span class="eyebrow">
+                    NARS DOCUMENT CENTER
+                </span>
+
+
+                <h1>
+                    Everything you need.
+                    <br>
+                    <span>Organized.</span>
+                </h1>
+
+
+                <p>
+                    Store, manage and quickly find
+                    your important documents.
+                </p>
+
+            </div>
+
+
+            <div class="folder-art">
+                📂
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <div class="search-box">
+
+            <span>
+                🔍
+            </span>
+
+
+            <input
+                type="text"
+                id="documentSearch"
+                placeholder="Search documents, certificates, notes..."
+            >
+
+
+            <kbd>
+                Ctrl K
+            </kbd>
+
+        </div>
+
+
+
+        <!-- ================= QUICK ACTIONS ================= -->
+
+        <section class="quick-actions">
+
+
+            <!-- UPLOAD -->
+
+            <button
+                class="upload-card"
+                id="uploadBtn"
+            >
+
+                <div class="action-icon">
+                    ⬆️
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Upload Document
+                    </strong>
+
+                    <small>
+                        Add a new file
+                    </small>
+
+                </div>
+
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+
+            <!-- RECENT -->
+
+            <button
+                class="action-card"
+                onclick="scrollToRecent()"
+            >
+
+                <div class="action-icon">
+                    🕘
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Recent
+                    </strong>
+
+                    <small>
+                        Recently added files
+                    </small>
+
+                </div>
+
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+
+            <!-- FAVORITES -->
+
+            <button
+                class="action-card"
+                onclick="openDocument('Favorites')"
+            >
+
+                <div class="action-icon">
+                    ⭐
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Favorites
+                    </strong>
+
+                    <small>
+                        Your important files
+                    </small>
+
+                </div>
+
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+        </section>
+
+
+
+        <!-- ================= STORAGE ================= -->
+
+        <section class="storage">
+
+
+            <div class="storage-left">
+
+                <div class="storage-icon">
+                    ☁️
+                </div>
+
+
+                <div>
+
+                    <span>
+                        STORAGE
+                    </span>
+
+
+                    <h3>
+                        Your Documents Space
+                    </h3>
+
+
+                    <p>
+                        Secure storage will be connected
+                        during the backend stage.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="storage-right">
+
+                <strong>
+                    0%
+                </strong>
+
+
+                <div class="progress">
+
+                    <div></div>
+
+                </div>
+
+
+                <small>
+                    0 documents
+                </small>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section>
+
+
+            <div class="section-head">
+
+                <div>
+
+                    <span>
+                        ORGANIZE
+                    </span>
+
+
+                    <h2>
+                        Browse Categories
+                    </h2>
+
+                </div>
+
+
+                <button
+                    onclick="showAllCategories()"
+                >
+                    View all →
+                </button>
+
+            </div>
+
+
+
+            <div class="categories">
+
+
+                <!-- EDUCATION -->
+
+                <button
+                    class="category"
+                    onclick="openDocument('Education')"
+                >
+
+                    <div class="category-icon education">
+                        🎓
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Education
+                        </strong>
+
+                        <small>
+                            Certificates & marksheets
+                        </small>
+
+                    </div>
+
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+
+                <!-- IDENTITY -->
+
+                <button
+                    class="category"
+                    onclick="openDocument('Identity')"
+                >
+
+                    <div class="category-icon identity">
+                        🪪
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Identity
+                        </strong>
+
+                        <small>
+                            Important ID documents
+                        </small>
+
+                    </div>
+
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+
+                <!-- CAREER -->
+
+                <button
+                    class="category"
+                    onclick="openDocument('Career')"
+                >
+
+                    <div class="category-icon career">
+                        💼
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Career
+                        </strong>
+
+                        <small>
+                            Resume & applications
+                        </small>
+
+                    </div>
+
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+
+                <!-- PERSONAL -->
+
+                <button
+                    class="category"
+                    onclick="openDocument('Personal')"
+                >
+
+                    <div class="category-icon personal">
+                        👤
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Personal
+                        </strong>
+
+                        <small>
+                            Personal files
+                        </small>
+
+                    </div>
+
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+
+                <!-- NOTES -->
+
+                <button
+                    class="category"
+                    onclick="openDocument('Notes')"
+                >
+
+                    <div class="category-icon notes">
+                        📝
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Notes
+                        </strong>
+
+                        <small>
+                            Notes & study files
+                        </small>
+
+                    </div>
+
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+
+                <!-- OTHER -->
+
+                <button
+                    class="category"
+                    onclick="openDocument('Other')"
+                >
+
+                    <div class="category-icon other">
+                        📦
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Other
+                        </strong>
+
+                        <small>
+                            Other important files
+                        </small>
+
+                    </div>
+
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= RECENT DOCUMENTS ================= -->
+
+        <section
+            class="recent"
+            id="recentSection"
+        >
+
+
+            <div class="section-head">
+
+                <div>
+
+                    <span>
+                        FILES
+                    </span>
+
+
+                    <h2>
+                        Recent Documents
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DEMO FILE LIST -->
+
+           <div class="recent-files" id="recentFiles">
+
+                <!-- FILE 1 -->
+
+                <div class="file-row">
+
+                    <div class="file-type pdf">
+                        PDF
+                    </div>
+
+
+                    <div class="file-info">
+
+                        <strong>
+                            My Certificate.pdf
+                        </strong>
+
+                        <small>
+                            Education • 2.4 MB
+                        </small>
+
+                    </div>
+
+
+                    <span class="file-date">
+                        Today
+                    </span>
+
+
+                    <button
+                        onclick="openFileMenu('My Certificate.pdf')"
+                    >
+                        ⋮
+                    </button>
+
+                </div>
+
+
+
+                <!-- FILE 2 -->
+
+                <div class="file-row">
+
+                    <div class="file-type image">
+                        JPG
+                    </div>
+
+
+                    <div class="file-info">
+
+                        <strong>
+                            College ID.jpg
+                        </strong>
+
+                        <small>
+                            Identity • 1.2 MB
+                        </small>
+
+                    </div>
+
+
+                    <span class="file-date">
+                        Yesterday
+                    </span>
+
+
+                    <button
+                        onclick="openFileMenu('College ID.jpg')"
+                    >
+                        ⋮
+                    </button>
+
+                </div>
+
+
+
+                <!-- FILE 3 -->
+
+                <div class="file-row">
+
+                    <div class="file-type doc">
+                        DOC
+                    </div>
+
+
+                    <div class="file-info">
+
+                        <strong>
+                            Resume.docx
+                        </strong>
+
+                        <small>
+                            Career • 850 KB
+                        </small>
+
+                    </div>
+
+
+                    <span class="file-date">
+                        Aug 15
+                    </span>
+
+
+                    <button
+                        onclick="openFileMenu('Resume.docx')"
+                    >
+                        ⋮
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SECURITY ================= -->
+
+        <div class="security">
+
+            <div>
+                🔐
+            </div>
+
+
+            <p>
+
+                <strong>
+                    Your documents are private.
+                </strong>
+
+                Secure authentication,
+                encrypted storage and real
+                file uploads will be connected
+                during the backend stage.
+
+            </p>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="documents.js"></script>
+
+
+    <script>
+
+        function scrollToRecent() {
+
+            document
+                .getElementById("recentSection")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+
+        }
+
+
+        function showAllCategories() {
+
+            alert(
+                "All document categories will be available soon 📁"
+            );
+
+        }
+
+
+        function openFileMenu(fileName) {
+
+            alert(
+                fileName +
+                "\n\n" +
+                "Open\n" +
+                "Download\n" +
+                "Rename\n" +
+                "Delete"
+            );
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

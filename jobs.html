@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NARS Jobs & Career</title>
+
+    <link
+        rel="stylesheet"
+        href="jobs.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="jobs-header">
+
+        <a
+            href="dashboard.html"
+            class="back"
+        >
+            ← Dashboard
+        </a>
+
+
+        <div class="jobs-brand">
+
+            <div class="jobs-logo">
+                💼
+            </div>
+
+            <div>
+
+                <strong>
+                    NARS Jobs & Career
+                </strong>
+
+                <small>
+                    Learn. Build. Get hired.
+                </small>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main class="jobs-container">
+
+
+        <!-- HERO -->
+
+        <section class="jobs-hero">
+
+            <div>
+
+                <span>
+                    CAREER HUB
+                </span>
+
+                <h1>
+                    Build your future. 🚀
+                </h1>
+
+                <p>
+                    Discover internships, jobs,
+                    skills and career opportunities
+                    in one place.
+                </p>
+
+            </div>
+
+
+            <div class="career-icon">
+                💼
+            </div>
+
+        </section>
+
+
+
+        <!-- SEARCH -->
+
+        <div class="job-search">
+
+            <input
+                type="text"
+                id="jobSearch"
+                placeholder="Search jobs, internships, skills..."
+            >
+
+
+            <button id="jobSearchBtn">
+                Search
+            </button>
+
+        </div>
+
+
+
+        <!-- CAREER OPTIONS -->
+
+        <section class="jobs-section">
+
+            <div class="section-heading">
+
+                <span>
+                    EXPLORE
+                </span>
+
+                <h2>
+                    Career opportunities
+                </h2>
+
+            </div>
+
+
+            <div class="jobs-grid">
+
+
+                <!-- INTERNSHIPS -->
+
+                <div class="job-card">
+
+                    <div class="job-icon">
+                        🎓
+                    </div>
+
+                    <h3>
+                        Internships
+                    </h3>
+
+                    <p>
+                        Find internships to gain
+                        real-world experience.
+                    </p>
+
+                    <button
+                        onclick="openJobFeature('Internships')"
+                    >
+                        Explore →
+                    </button>
+
+                </div>
+
+
+
+                <!-- JOBS -->
+
+                <div class="job-card">
+
+                    <div class="job-icon">
+                        💼
+                    </div>
+
+                    <h3>
+                        Jobs
+                    </h3>
+
+                    <p>
+                        Explore job opportunities
+                        based on your skills.
+                    </p>
+
+                    <button
+                        onclick="openJobFeature('Jobs')"
+                    >
+                        Find Jobs →
+                    </button>
+
+                </div>
+
+
+
+                <!-- SKILLS -->
+
+                <div class="job-card">
+
+                    <div class="job-icon">
+                        🧑‍💻
+                    </div>
+
+                    <h3>
+                        Skill Development
+                    </h3>
+
+                    <p>
+                        Learn skills that can help
+                        you build your career.
+                    </p>
+
+                    <button
+                        onclick="openJobFeature('Skill Development')"
+                    >
+                        Learn →
+                    </button>
+
+                </div>
+
+
+
+                <!-- RESUME -->
+
+                <div class="job-card">
+
+                    <div class="job-icon">
+                        📄
+                    </div>
+
+                    <h3>
+                        Resume Builder
+                    </h3>
+
+                    <p>
+                        Create a professional
+                        resume with NARS.
+                    </p>
+
+                    <button
+                        onclick="openJobFeature('Resume Builder')"
+                    >
+                        Create →
+                    </button>
+
+                </div>
+
+
+
+                <!-- INTERVIEW -->
+
+                <div class="job-card">
+
+                    <div class="job-icon">
+                        🎤
+                    </div>
+
+                    <h3>
+                        Interview Preparation
+                    </h3>
+
+                    <p>
+                        Practice interview questions
+                        and improve confidence.
+                    </p>
+
+                    <button
+                        onclick="openJobFeature('Interview Preparation')"
+                    >
+                        Practice →
+                    </button>
+
+                </div>
+
+
+
+                <!-- CAREER AI -->
+
+                <div class="job-card">
+
+                    <div class="job-icon">
+                        🤖
+                    </div>
+
+                    <h3>
+                        AI Career Guide
+                    </h3>
+
+                    <p>
+                        Ask NARS AI about skills,
+                        careers and opportunities.
+                    </p>
+
+                    <button
+                        onclick="window.location.href='ai.html'"
+                    >
+                        Ask AI →
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CAREER PLAN -->
+
+        <section class="career-plan">
+
+            <div>
+
+                <span>
+                    NARS CAREER PLAN
+                </span>
+
+                <h2>
+                    Don't know where to start?
+                </h2>
+
+                <p>
+                    NARS can help you understand
+                    your interests, choose skills,
+                    prepare a resume and find
+                    suitable opportunities.
+                </p>
+
+            </div>
+
+
+            <button
+                onclick="openJobFeature('Career Plan')"
+            >
+                Build My Career Plan →
+            </button>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <script src="jobs.js"></script>
+
+
+</body>
+
+</html>

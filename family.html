@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NARS Family Care</title>
+
+    <link
+        rel="stylesheet"
+        href="family.css"
+    >
+</head>
+
+<body>
+
+    <header class="family-header">
+
+        <a
+            href="dashboard.html"
+            class="back"
+        >
+            ← Dashboard
+        </a>
+
+        <div class="family-brand">
+
+            <div class="family-logo">
+                ❤️
+            </div>
+
+            <div>
+
+                <strong>
+                    NARS Family Care
+                </strong>
+
+                <small>
+                    Stay connected. Stay caring.
+                </small>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="family-container">
+
+
+        <section class="family-welcome">
+
+            <div>
+
+                <span>
+                    FAMILY CARE
+                </span>
+
+                <h1>
+                    Take care of the people
+                    who matter. ❤️
+                </h1>
+
+                <p>
+                    Add your parents, children or
+                    family members and create useful
+                    reminders and alerts.
+                </p>
+
+            </div>
+
+            <div class="heart-icon">
+                ❤️
+            </div>
+
+        </section>
+
+
+        <!-- ADD FAMILY MEMBER -->
+
+        <section class="family-panel">
+
+            <div class="panel-heading">
+
+                <div>
+
+                    <span>
+                        FAMILY MEMBERS
+                    </span>
+
+                    <h2>
+                        Add someone
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="member-form">
+
+                <input
+                    type="text"
+                    id="memberName"
+                    placeholder="Name"
+                >
+
+                <input
+                    type="tel"
+                    id="memberPhone"
+                    placeholder="Phone number"
+                >
+
+                <select id="memberRelation">
+
+                    <option value="">
+                        Select relation
+                    </option>
+
+                    <option value="Parent">
+                        Parent
+                    </option>
+
+                    <option value="Child">
+                        Child
+                    </option>
+
+                    <option value="Cousin">
+                        Cousin
+                    </option>
+
+                    <option value="Sibling">
+                        Sibling
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <button id="addMemberBtn">
+                    + Add Member
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEMBERS -->
+
+        <section class="family-panel">
+
+            <div class="panel-heading">
+
+                <div>
+
+                    <span>
+                        YOUR FAMILY
+                    </span>
+
+                    <h2>
+                        Family members
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div id="membersList">
+
+                <div class="empty-state">
+
+                    <div>
+                        👨‍👩‍👧‍👦
+                    </div>
+
+                    <p>
+                        No family members added yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- REMINDERS -->
+
+        <section class="family-panel">
+
+            <div class="panel-heading">
+
+                <div>
+
+                    <span>
+                        REMINDERS
+                    </span>
+
+                    <h2>
+                        Family reminders
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="reminder-form">
+
+                <input
+                    type="text"
+                    id="reminderText"
+                    placeholder="Example: Take medicine"
+                >
+
+                <input
+                    type="time"
+                    id="reminderTime"
+                >
+
+                <button id="reminderBtn">
+                    + Add Reminder
+                </button>
+
+            </div>
+
+
+            <div id="reminderList">
+
+                <p class="no-reminders">
+                    No reminders yet.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI SUPPORT -->
+
+        <section class="ai-support">
+
+            <div class="ai-icon">
+                N
+            </div>
+
+            <div>
+
+                <span>
+                    NARS AI FAMILY SUPPORT
+                </span>
+
+                <h2>
+                    Need someone to talk to?
+                </h2>
+
+                <p>
+                    NARS AI can listen, guide and
+                    help you think through everyday
+                    problems.
+                </p>
+
+                <button
+                    onclick="window.location.href='ai.html'"
+                >
+                    Talk to NARS AI →
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="family.js"></script>
+
+</body>
+
+</html>

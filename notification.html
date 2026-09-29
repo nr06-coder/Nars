@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NARS Notifications</title>
+
+    <link rel="stylesheet" href="notifications.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <a href="dashboard.html" class="back-btn">
+            ←
+        </a>
+
+        <div class="brand">
+
+            <div class="logo">
+                N
+            </div>
+
+            <div>
+                <strong>NARS</strong>
+                <small>Notifications</small>
+            </div>
+
+        </div>
+
+        <div class="profile">
+            👤 Chintu
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="container">
+
+        <!-- HEADER -->
+
+        <section class="page-header">
+
+            <div>
+                <span>NARS ACCOUNT</span>
+
+                <h1>
+                    Notifications 🔔
+                </h1>
+
+                <p>
+                    Important updates and alerts from NARS.
+                </p>
+            </div>
+
+            <button
+                id="markAllBtn"
+                class="mark-btn"
+            >
+                ✓ Mark all as read
+            </button>
+
+        </section>
+
+
+        <!-- NOTIFICATION SUMMARY -->
+
+        <section class="summary">
+
+            <div class="summary-item">
+
+                <strong id="notificationCount">
+                    3
+                </strong>
+
+                <span>
+                    Notifications
+                </span>
+
+            </div>
+
+            <div class="summary-item">
+
+                <strong id="unreadCount">
+                    2
+                </strong>
+
+                <span>
+                    Unread
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- NOTIFICATIONS -->
+
+        <section class="notifications-list">
+
+
+            <!-- EDUCATION -->
+
+            <div
+                class="notification-card unread"
+                data-type="education"
+            >
+
+                <div class="notification-icon">
+                    🎓
+                </div>
+
+                <div class="notification-info">
+
+                    <div class="notification-top">
+
+                        <h3>
+                            Education Update
+                        </h3>
+
+                        <span class="dot"></span>
+
+                    </div>
+
+                    <p>
+                        Check NARS Education for study materials,
+                        exams and useful learning resources.
+                    </p>
+
+                    <small>
+                        Just now
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAREER -->
+
+            <div
+                class="notification-card unread"
+                data-type="career"
+            >
+
+                <div class="notification-icon">
+                    💼
+                </div>
+
+                <div class="notification-info">
+
+                    <div class="notification-top">
+
+                        <h3>
+                            Career Opportunities
+                        </h3>
+
+                        <span class="dot"></span>
+
+                    </div>
+
+                    <p>
+                        Explore jobs and internship opportunities
+                        available through NARS.
+                    </p>
+
+                    <small>
+                        Today
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- NEWS -->
+
+            <div
+                class="notification-card"
+                data-type="news"
+            >
+
+                <div class="notification-icon">
+                    📰
+                </div>
+
+                <div class="notification-info">
+
+                    <div class="notification-top">
+
+                        <h3>
+                            News & Updates
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Stay updated with important news and
+                        information from different categories.
+                    </p>
+
+                    <small>
+                        Today
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- EMPTY -->
+
+        <section
+            id="emptyState"
+            class="empty-state"
+        >
+
+            <div>
+                🔔
+            </div>
+
+            <h2>
+                You're all caught up
+            </h2>
+
+            <p>
+                You don't have any unread notifications.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="notifications.js"></script>
+
+</body>
+
+</html>
